@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StyleTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4I5-gu-a9L">
+                                <rect key="frame" x="40" y="64" width="295" height="295"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.20673694349315069" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4I5-gu-a9L" secondAttribute="height" multiplier="1:1" id="iaZ-PA-BOg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJj-v8-Gsm">
+                                <rect key="frame" x="40" y="379" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="GF8-cB-d2c"/>
+                                    <constraint firstAttribute="width" constant="100" id="WS3-Ll-oRm"/>
+                                </constraints>
+                                <state key="normal" title="Pick Image">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="goc-5e-Le7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT9-xk-1qs">
+                                <rect key="frame" x="235" y="379" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EEW-5b-aMI"/>
+                                    <constraint firstAttribute="width" constant="100" id="Jd9-dl-lZc"/>
+                                </constraints>
+                                <state key="normal" title="Apply">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="applyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4D-Z6-wbG"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qKD-NN-1xb">
+                                <rect key="frame" x="315" y="386" width="20" height="21"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operation took x sec." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-kb-h4H">
+                                <rect key="frame" x="160" y="389" width="175" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4I5-gu-a9L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9Cm-K0-alC"/>
+                            <constraint firstItem="ZT9-xk-1qs" firstAttribute="top" secondItem="4I5-gu-a9L" secondAttribute="bottom" constant="20" id="IOV-TH-oDQ"/>
+                            <constraint firstItem="qKD-NN-1xb" firstAttribute="top" secondItem="4I5-gu-a9L" secondAttribute="bottom" constant="27" id="JJ3-vd-EEN"/>
+                            <constraint firstItem="nJj-v8-Gsm" firstAttribute="top" secondItem="4I5-gu-a9L" secondAttribute="bottom" constant="20" id="PU6-oU-03V"/>
+                            <constraint firstItem="qKD-NN-1xb" firstAttribute="centerY" secondItem="nJj-v8-Gsm" secondAttribute="centerY" id="Rxu-Xb-Fvb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4I5-gu-a9L" secondAttribute="trailing" constant="40" id="VjP-vg-dyc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bUd-kb-h4H" secondAttribute="trailing" constant="40" id="WXo-Bv-Agy"/>
+                            <constraint firstItem="bUd-kb-h4H" firstAttribute="leading" secondItem="nJj-v8-Gsm" secondAttribute="trailing" constant="20" id="ZIg-xn-Ky1"/>
+                            <constraint firstItem="nJj-v8-Gsm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="bFP-VU-SdM"/>
+                            <constraint firstItem="bUd-kb-h4H" firstAttribute="top" secondItem="4I5-gu-a9L" secondAttribute="bottom" constant="30" id="nHc-dz-xIN"/>
+                            <constraint firstItem="qKD-NN-1xb" firstAttribute="trailing" secondItem="ZT9-xk-1qs" secondAttribute="trailing" id="oM2-H6-39s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZT9-xk-1qs" secondAttribute="trailing" constant="40" id="sWl-d4-6KB"/>
+                            <constraint firstItem="4I5-gu-a9L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ukj-gh-1qQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="applyFilterActivityIndicator" destination="qKD-NN-1xb" id="eQC-TV-6i9"/>
+                        <outlet property="applyFilterButton" destination="ZT9-xk-1qs" id="i2s-G1-MoM"/>
+                        <outlet property="imageView" destination="4I5-gu-a9L" id="tad-fV-VBF"/>
+                        <outlet property="operationSummaryLabel" destination="bUd-kb-h4H" id="UWr-zJ-wSb"/>
+                        <outlet property="pickImageButton" destination="nJj-v8-Gsm" id="gbt-Iu-QtJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.4384236453202"/>
+        </scene>
+    </scenes>
+</document>
