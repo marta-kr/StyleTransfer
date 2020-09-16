@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C113E9F325125A130098269E /* app_screenshots.png in Resources */ = {isa = PBXBuildFile; fileRef = C113E9F225125A130098269E /* app_screenshots.png */; };
+		C113E9F525125C230098269E /* app_screenshots.png in Resources */ = {isa = PBXBuildFile; fileRef = C113E9F425125C230098269E /* app_screenshots.png */; };
 		C17576E9250927F800BA0CB4 /* TwoFridasStyleTransfer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C17576E8250927F800BA0CB4 /* TwoFridasStyleTransfer.mlmodel */; };
 		C1A1668A24F550E600D9A943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1668924F550E600D9A943 /* AppDelegate.swift */; };
 		C1A1668C24F550E600D9A943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1668B24F550E600D9A943 /* SceneDelegate.swift */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		C113E9F0251174E80098269E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C113E9F225125A130098269E /* app_screenshots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_screenshots.png; sourceTree = "<group>"; };
+		C113E9F425125C230098269E /* app_screenshots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_screenshots.png; sourceTree = "<group>"; };
 		C17576E8250927F800BA0CB4 /* TwoFridasStyleTransfer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = TwoFridasStyleTransfer.mlmodel; path = ../../../../Downloads/TwoFridasStyleTransfer.mlmodel; sourceTree = "<group>"; };
 		C1A1668624F550E600D9A943 /* StyleTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A1668924F550E600D9A943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		C113E9F1251259350098269E /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C113E9F225125A130098269E /* app_screenshots.png */,
+				C113E9F425125C230098269E /* app_screenshots.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -55,6 +55,8 @@
 		C1A1667D24F550E600D9A943 = {
 			isa = PBXGroup;
 			children = (
+				C113E9F0251174E80098269E /* README.md */,
+				C113E9F1251259350098269E /* Images */,
 				C1A1668824F550E600D9A943 /* StyleTransfer */,
 				C1A1668724F550E600D9A943 /* Products */,
 			);
@@ -71,7 +73,6 @@
 		C1A1668824F550E600D9A943 /* StyleTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				C113E9F1251259350098269E /* Images */,
 				C1A1669D24F578DF00D9A943 /* MLModels */,
 				C1A1668924F550E600D9A943 /* AppDelegate.swift */,
 				C1A1668B24F550E600D9A943 /* SceneDelegate.swift */,
@@ -81,7 +82,6 @@
 				C1A1669424F550EA00D9A943 /* LaunchScreen.storyboard */,
 				C1A1669724F550EA00D9A943 /* Info.plist */,
 				C1A166A024F6ADBD00D9A943 /* CoreMLHelpers.swift */,
-				C113E9F0251174E80098269E /* README.md */,
 			);
 			path = StyleTransfer;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 				C1A1669624F550EA00D9A943 /* LaunchScreen.storyboard in Resources */,
 				C1A1669324F550EA00D9A943 /* Assets.xcassets in Resources */,
 				C1A1669124F550E600D9A943 /* Main.storyboard in Resources */,
-				C113E9F325125A130098269E /* app_screenshots.png in Resources */,
+				C113E9F525125C230098269E /* app_screenshots.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
